@@ -34,6 +34,7 @@ python analysis/base_weights.py           # Table 7: equal weight / inverse vol 
 python analysis/cost_stress.py            # Table 12: commission and slippage scenarios
 python analysis/bootstrap_ci.py           # Table 11: bootstrap intervals for CAGR, Sharpe, drawdown, Calmar
 python analysis/long_short_check.py       # Section 5.2: dollar-neutral long-short variant (why the strategy is long-only)
+python analysis/signal_overlap.py        # Section 9, point 4: how similar momentum and trend strength are, and whether using both matters
 ```
 Outputs go to `results_analysis/`. Bootstrap procedures use 20-day blocks and seed 42. Set `SLIP_BPS` and `COMM_BPS` in the
 environment to rerun `walk_forward.py` with other cost settings.
